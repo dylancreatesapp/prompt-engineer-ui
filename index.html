@@ -78,7 +78,7 @@
                 }
 
                 const data = await response.json();
-                output.innerText = data.refined || JSON.stringify(data);
+                output.innerText = data.refined || JSON.stringify(data, null, 2);
             } catch (error) {
                 output.innerText = "⚠️ Xatolik: " + error.message;
             }
